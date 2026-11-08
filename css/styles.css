@@ -1,0 +1,19 @@
+/* Base + things Tailwind can't do. Tailwind (CDN) handles the rest. */
+html{-webkit-text-size-adjust:100%;background:#0f172a}
+body{margin:0;background:#0f172a;color:#e2e8f0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+section[data-sec]{display:none}
+section[data-sec].on{display:block}
+.num{font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+/* Inline validation */
+.err{margin:.25rem 0 0;font-size:.875rem;font-weight:600;color:#fb7185}
+.err[hidden]{display:none}
+.is-bad{border-color:#fb7185!important;box-shadow:0 0 0 2px rgba(251,113,133,.35)}
+.stale-rate{border-color:#fb7185!important;background:rgba(190,18,60,.25)!important}
+/* Camera + loupe: block browser scroll/zoom gestures while panning */
+.loupe-grid{position:absolute;inset:0;pointer-events:none;background:linear-gradient(rgba(251,191,36,.4) 1px,transparent 1px) 0 0/33.333% 33.333%,linear-gradient(90deg,rgba(251,191,36,.4) 1px,transparent 1px) 0 0/33.333% 33.333%}
+.loupe-grid[hidden]{display:none}
+.cam-hc video{filter:contrast(1.9) grayscale(1) brightness(1.15)}
+#camBox video{transform-origin:center;transition:transform .15s}
+#camBox,#snapView,#snapCanvas{touch-action:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+#snapCanvas{display:block;width:100%;height:100%;-webkit-user-drag:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
