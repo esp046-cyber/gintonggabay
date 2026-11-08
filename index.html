@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>GintongGabay · Dubai Gold Guide & Legit Checker</title>
-<meta name="description" content="Dubai Gold Guide, Hallmark Scanner, Net Gold at Manila Pawnshop Calculator para sa mga OFW.">
+<title>GintongGabay · Gold Guide at Legit Checker</title>
+<meta name="description" content="Gold guide at legit checker para sa mga Pinoy at OFW na bumibili ng gold sa Dubai/UAE.">
 <meta name="theme-color" content="#0f172a">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -18,298 +19,272 @@
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style type="text/tailwindcss">
-@layer components {
-  .card { @apply rounded-2xl border border-slate-700 bg-slate-800/90 p-4 shadow-xl shadow-black/30; }
-  .lbl { @apply mb-1 block text-xs font-semibold uppercase tracking-wider text-slate-300; }
-  .inp { @apply w-full rounded-lg border border-slate-600 bg-slate-900 px-3 py-2.5 text-base text-slate-50 outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40; }
-  .btn { @apply inline-flex items-center justify-center gap-1.5 rounded-lg bg-amber-400 px-4 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-amber-300 active:scale-95 disabled:opacity-50; }
-  .btn-ghost { @apply inline-flex items-center justify-center gap-1.5 rounded-lg border border-amber-500/50 bg-slate-800/80 px-3 py-2 text-sm font-medium text-amber-300 transition hover:bg-amber-400/10 active:scale-95 aria-pressed:bg-amber-400 aria-pressed:text-slate-950; }
-  .h2 { @apply text-2xl font-black tracking-tight text-slate-50; }
-  .h3 { @apply mb-2 flex items-center gap-2 text-base font-bold text-amber-400; }
-  .stamp { @apply mr-3 inline-block min-w-[3.25rem] shrink-0 rounded bg-gradient-to-br from-amber-300 to-amber-600 px-2 py-1 text-center font-mono text-lg font-black text-slate-950 shadow; }
-  .tab { @apply flex flex-1 flex-col items-center gap-1 border-t-2 border-transparent px-1 pb-2 pt-2 text-[11px] font-semibold tracking-wide text-slate-400 transition; }
-  .rule { @apply rounded-xl border border-slate-700 bg-slate-900/70 p-3.5 open:border-amber-500/50; }
-  .rule summary { @apply cursor-pointer list-none font-bold text-slate-100 marker:hidden flex items-center justify-between; }
-  .rule summary::-webkit-details-marker { display: none; }
+@layer components{
+  .card{@apply rounded-2xl border border-slate-700 bg-slate-800/80 p-4 shadow-lg shadow-black/20}
+  .lbl{@apply mb-1 block text-sm font-medium text-slate-300}
+  .inp{@apply w-full rounded-lg border border-slate-600 bg-slate-900 px-3 py-2.5 text-base text-slate-50 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40}
+  .btn{@apply inline-flex items-center justify-center gap-1.5 rounded-lg bg-amber-400 px-4 py-2.5 text-sm font-semibold text-slate-900 hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300 disabled:cursor-not-allowed disabled:opacity-50}
+  .btn-ghost{@apply inline-flex items-center justify-center gap-1.5 rounded-lg border border-amber-500/60 bg-transparent px-3 py-2 text-sm font-medium text-amber-300 hover:bg-amber-400/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300 disabled:cursor-not-allowed disabled:opacity-40 aria-pressed:bg-amber-400 aria-pressed:text-slate-900}
+  .h2{@apply mb-1 text-2xl font-bold text-slate-50}
+  .h3{@apply mb-2 flex items-center gap-2 text-lg font-semibold text-amber-400}
+  .stamp{@apply mr-3 inline-block min-w-[3.5rem] shrink-0 rounded bg-gradient-to-br from-amber-300 to-amber-600 px-2 py-1 text-center font-mono text-xl font-bold text-slate-900}
+  .tab{@apply flex flex-1 flex-col items-center gap-0.5 border-t-2 border-transparent px-1 pb-2 pt-2 text-xs font-medium text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-300}
+  .rule{@apply rounded-xl border border-slate-700 bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300 open:border-amber-500/50}
+  .rule summary{@apply cursor-pointer list-none text-base font-semibold text-slate-50}
+  .rule summary::-webkit-details-marker{display:none}
 }
 </style>
 </head>
-<body class="min-h-screen text-slate-100 antialiased" style="padding-bottom:calc(6.5rem + env(safe-area-inset-bottom))">
+<body class="min-h-screen antialiased" style="padding-bottom:calc(6rem + env(safe-area-inset-bottom))">
 
-<header class="sticky top-0 z-30 border-b border-slate-700 bg-slate-900/95 px-3 pb-3 backdrop-blur" style="padding-top:calc(0.75rem + env(safe-area-inset-top))">
+<header class="sticky top-0 z-30 border-b border-slate-700 bg-slate-900/95 px-3 pb-3 backdrop-blur" style="padding-top:calc(.5rem + env(safe-area-inset-top));padding-left:max(.75rem,env(safe-area-inset-left));padding-right:max(.75rem,env(safe-area-inset-right))">
   <div class="mx-auto max-w-2xl">
-    <div class="flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <i data-lucide="gem" class="h-6 w-6 text-amber-400"></i>
-        <h1 class="text-xl font-black tracking-tight text-amber-400">GintongGabay</h1>
-      </div>
-      <div class="flex items-center gap-2">
-        <button id="resetRates" type="button" class="text-xs text-slate-400 underline hover:text-amber-300">I-reset</button>
+    <div class="flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2"><i data-lucide="gem" data-fb="◆" class="h-6 w-6 text-amber-400"></i><b class="text-xl font-bold tracking-tight text-amber-400">GintongGabay</b></div>
+      <span id="net" role="status" aria-live="polite" title="Katayuan ng koneksyon" class="rounded-full bg-emerald-900 px-2 py-0.5 text-xs font-medium text-emerald-300">Online</span>
+    </div>
+    <p class="mt-1 text-xs text-slate-400">DGJG board rate (AED kada gramo). I-edit; naka-save sa device mo.</p>
+    <div class="mt-2 grid grid-cols-4 gap-2" role="group" aria-label="DGJG board rates sa AED kada gramo">
+      <label class="rounded-lg border border-slate-700 bg-slate-800 p-1.5 text-center" title="24K rate (spot) sa AED/g"><span class="block text-xs text-slate-400">24K</span><input id="r24" type="text" inputmode="decimal" autocomplete="off" aria-label="24K rate sa AED kada gramo" class="w-full bg-transparent text-center text-base font-semibold text-amber-300 outline-none focus:ring-2 focus:ring-amber-400/50"></label>
+      <label class="rounded-lg border border-slate-700 bg-slate-800 p-1.5 text-center" title="22K rate sa AED/g"><span class="block text-xs text-slate-400">22K</span><input id="r22" type="text" inputmode="decimal" autocomplete="off" aria-label="22K rate sa AED kada gramo" class="w-full bg-transparent text-center text-base font-semibold text-amber-300 outline-none focus:ring-2 focus:ring-amber-400/50"></label>
+      <label class="rounded-lg border border-slate-700 bg-slate-800 p-1.5 text-center" title="21K rate sa AED/g"><span class="block text-xs text-slate-400">21K</span><input id="r21" type="text" inputmode="decimal" autocomplete="off" aria-label="21K rate sa AED kada gramo" class="w-full bg-transparent text-center text-base font-semibold text-amber-300 outline-none focus:ring-2 focus:ring-amber-400/50"></label>
+      <label class="rounded-lg border border-slate-700 bg-slate-800 p-1.5 text-center" title="18K rate sa AED/g"><span class="block text-xs text-slate-400">18K</span><input id="r18" type="text" inputmode="decimal" autocomplete="off" aria-label="18K rate sa AED kada gramo" class="w-full bg-transparent text-center text-base font-semibold text-amber-300 outline-none focus:ring-2 focus:ring-amber-400/50"></label>
+    </div>
+    <div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-slate-300">
+      <label for="fx" class="whitespace-nowrap">1 AED =</label>
+      <input id="fx" type="text" inputmode="decimal" autocomplete="off" class="w-24 rounded-lg border border-slate-600 bg-slate-900 px-2 py-1.5 text-base text-slate-50 outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40">
+      <span>PHP</span>
+      <div class="ml-auto flex items-center gap-3">
+        <button id="refreshRates" type="button" class="btn !px-3 !py-1.5 !text-xs" title="Kunin ang live na gold at AED→PHP rates" aria-label="I-refresh ang rates mula sa internet" aria-busy="false">
+          <svg id="spin" class="hidden h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-opacity=".3" stroke-width="3"/><path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <span id="refreshIcon" aria-hidden="true">🔄</span><span id="refreshTxt">I-refresh ang Rates</span>
+        </button>
+        <button id="resetRates" type="button" title="Ibalik sa placeholder rates" aria-label="Ibalik ang rates sa placeholder" class="text-xs text-slate-400 underline hover:text-amber-300">I-reset</button>
       </div>
     </div>
-    <p class="mt-1 text-xs text-slate-400">Live Dubai Gold & Jewellery Group (DGJG) Board Rates sa AED/g:</p>
-    <div class="mt-2 grid grid-cols-4 gap-2">
-      <label class="rounded-lg border border-slate-700 bg-slate-800 p-1.5 text-center"><span class="block text-[10px] font-bold text-slate-400">24K</span><input id="r24" type="number" inputmode="decimal" step="0.1" class="w-full bg-transparent text-center text-sm font-bold text-amber-300 outline-none"></label>
-      <label class="rounded-lg border border-slate-700 bg-slate-800 p-1.5 text-center"><span class="block text-[10px] font-bold text-slate-400">22K</span><input id="r22" type="number" inputmode="decimal" step="0.1" class="w-full bg-transparent text-center text-sm font-bold text-amber-300 outline-none"></label>
-      <label class="rounded-lg border border-slate-700 bg-slate-800 p-1.5 text-center"><span class="block text-[10px] font-bold text-slate-400">21K</span><input id="r21" type="number" inputmode="decimal" step="0.1" class="w-full bg-transparent text-center text-sm font-bold text-amber-300 outline-none"></label>
-      <label class="rounded-lg border border-slate-700 bg-slate-800 p-1.5 text-center"><span class="block text-[10px] font-bold text-slate-400">18K</span><input id="r18" type="number" inputmode="decimal" step="0.1" class="w-full bg-transparent text-center text-sm font-bold text-amber-300 outline-none"></label>
+    <p id="rateErr" class="err" role="alert" hidden></p>
+    <div id="stale" role="alert" hidden class="mt-2 flex flex-wrap items-center gap-2 rounded-lg border border-rose-400 bg-rose-950/70 p-2 text-sm text-rose-200">
+      <span class="min-w-0 flex-1"></span>
+      <button id="confirmRates" type="button" class="btn-ghost !border-rose-300 !text-rose-200" title="Kumpirmahing tama pa ang rates ngayon" aria-label="Kumpirmahing tama pa ang rates">Tama pa</button>
     </div>
-    <div class="mt-2 flex items-center justify-between text-xs text-slate-300">
-      <div class="flex items-center gap-1.5">
-        <label for="fx">Remittance Rate: 1 AED =</label>
-        <input id="fx" type="number" step="0.05" class="w-16 rounded border border-slate-700 bg-slate-900 px-1.5 py-0.5 text-center font-bold text-amber-300">
-        <span>PHP</span>
-      </div>
-      <p id="stamp" class="text-right"></p>
-    </div>
+    <p id="stamp" class="mt-2 flex items-center gap-2 text-xs text-slate-300" role="status" aria-live="polite"><span id="dot" class="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-slate-400" aria-hidden="true"></span><span id="stampTxt"></span></p>
+    <p class="mt-0.5 text-[11px] leading-snug text-slate-500">Ang live rate ay international spot (hindi eksaktong DGJG board sa tindahan). I-edit kung iba ang board.</p>
   </div>
 </header>
 
 <main class="mx-auto max-w-2xl space-y-4 px-3 py-4">
 
-<!-- CALCULATOR TAB -->
-<section id="calc" data-sec>
-  <div class="flex items-center justify-between">
-    <div>
-      <h2 class="h2">Sangla vs. Suot</h2>
-      <p class="text-xs text-slate-400">Tantiyahin ang tunay na scrap value sa Pilipinas bago magbayad.</p>
-    </div>
-  </div>
-
+<!-- CALCULATOR -->
+<section id="calc" data-sec role="tabpanel" aria-labelledby="t-calc">
+  <h2 class="h2">Sangla vs. Suot</h2>
+  <p class="text-slate-300">Alamin kung magkano talaga ang makukuha mo sa Manila pawnshop kumpara sa binayaran mo sa Dubai.</p>
   <div class="card mt-3">
     <div class="grid grid-cols-2 gap-3">
-      <div>
-        <label class="lbl" for="gross">Timbang / Gross (g)</label>
-        <input id="gross" class="inp" type="number" min="0" step="0.01" placeholder="Hal. 20.86">
-      </div>
-      <div>
-        <label class="lbl" for="karat">Karat Purity</label>
-        <select id="karat" class="inp">
-          <option value="24">24K (999 Fine Gold)</option>
-          <option value="22">22K (916 Gulf Standard)</option>
-          <option value="21">21K (875 Arabic Standard)</option>
-          <option value="18" selected>18K (750 Fashion / VCA)</option>
-        </select>
-      </div>
-      <div>
-        <label class="lbl" for="stone">Bato / Motif Type</label>
-        <select id="stone" class="inp"></select>
-      </div>
-      <div>
-        <label class="lbl" for="customStone">Custom Bawas Bato (g)</label>
-        <input id="customStone" class="inp" type="number" min="0" step="0.01" placeholder="Optional (Hal. 2.5)">
-      </div>
-      <div>
-        <label class="lbl" for="making">Upah / Making (AED/g)</label>
-        <input id="making" class="inp" type="number" min="0" step="1" placeholder="Hal. 25">
-      </div>
-      <div>
-        <label class="lbl" for="ltvTier">Pawn Appraisal Rate</label>
-        <select id="ltvTier" class="inp">
-          <option value="conservative">Conservative (75% LTV)</option>
-          <option value="moderate" selected>Palawan / Cebuana (~82%)</option>
-          <option value="high">Villarica / High (~90%)</option>
-        </select>
-      </div>
+      <div><label class="lbl" for="gross">Gross weight (g)</label><input id="gross" class="inp" type="text" inputmode="decimal" autocomplete="off"></div>
+      <div><label class="lbl" for="karat">Karat</label><select id="karat" class="inp"><option value="24">24K (999)</option><option value="22">22K (916)</option><option value="21">21K (875)</option><option value="18">18K (750)</option></select></div>
+      <div class="col-span-2"><label class="lbl" for="stone">Bato / motif (stone deduction)</label><select id="stone" class="inp"></select></div>
+      <div id="stoneWrap" class="col-span-2" hidden><label class="lbl" for="stoneG">Timbang ng bato (g)</label><input id="stoneG" class="inp" type="text" inputmode="decimal" autocomplete="off" placeholder="hal. 2.5"></div>
+      <div><label class="lbl" for="making">Upah (AED/g)</label><input id="making" class="inp" type="text" inputmode="decimal" autocomplete="off"></div>
+      <div><label class="lbl" for="ltv">Pawn LTV</label><select id="ltv" class="inp"></select></div>
     </div>
-
-    <div class="mt-3 flex items-center justify-between rounded-lg border border-slate-700 bg-slate-900/80 p-2.5">
-      <div class="flex items-center gap-2">
-        <input type="checkbox" id="vatToggle" class="h-4 w-4 accent-amber-400">
-        <label for="vatToggle" class="text-xs font-semibold text-slate-200">I-bawas ang Planet Tax Free (DXB Tourist Refund)</label>
-      </div>
-      <span class="text-[10px] text-slate-400">Min. 250 AED</span>
-    </div>
+    <label class="mt-3 flex items-start gap-3 rounded-lg border border-slate-700 bg-slate-900/60 p-3 text-sm text-slate-200" title="Ipakita ang net cost matapos ang DXB VAT refund">
+      <input id="vatRefund" type="checkbox" class="mt-0.5 h-6 w-6 shrink-0 accent-amber-400"><span><b class="text-slate-50">Isama ang VAT refund sa DXB</b> (turista lang): 85% ng VAT bawas AED 4.80 kada tag, kung AED 250 pataas ang invoice.</span>
+    </label>
   </div>
-
   <div class="card mt-3" id="out" aria-live="polite"></div>
-  
-  <button id="copyBtn" type="button" class="btn-ghost mt-2 w-full hidden">
-    <i data-lucide="copy" class="h-4 w-4"></i>
-    <span>Kopyahin ang Breakdown (Pang-WhatsApp/Messenger)</span>
-  </button>
+  <div class="mt-3 flex flex-wrap items-center gap-3">
+    <button id="copyBtn" type="button" class="btn" title="I-copy ang buong computation" aria-label="I-copy ang breakdown sa clipboard"><i data-lucide="copy" data-fb="⧉" class="h-4 w-4"></i>Copy Breakdown</button>
+    <span id="copyMsg" class="text-sm text-emerald-300" role="status" aria-live="polite"></span>
+  </div>
 </section>
 
-<!-- SCANNER & LEGIT CHECK TAB -->
-<section id="scan" data-sec class="hidden">
-  <h2 class="h2">Legit Check & Loupe</h2>
-  
+<!-- SCAN -->
+<section id="scan" data-sec role="tabpanel" aria-labelledby="t-scan">
+  <h2 class="h2">Legit Check at Digital Loupe</h2>
   <div class="card mt-3">
-    <h3 class="h3"><i data-lucide="shield-check" class="h-5 w-5"></i>Opisyal na UAE Hallmarks</h3>
-    <div class="space-y-2 divide-y divide-dashed divide-slate-700 text-xs">
-      <div class="flex items-center pt-2"><span class="stamp">999</span><span><b>24 Karat</b> (99.9% Pure Gold) · Bullion bars, coins, at purong alahas.</span></div>
-      <div class="flex items-center pt-2"><span class="stamp">916</span><span><b>22 Karat</b> (91.6% Gold) · Pamantayan ng plain gold sa Dubai Souk.</span></div>
-      <div class="flex items-center pt-2"><span class="stamp">875</span><span><b>21 Karat</b> (87.5% Gold) · Mas matibay para sa arawang suot.</span></div>
-      <div class="flex items-center pt-2"><span class="stamp">750</span><span><b>18 Karat</b> (75.0% Gold) · Ginagamit sa luxury motif, may bato, o enamel.</span></div>
-    </div>
-    <div class="mt-3 rounded-lg border border-amber-500/40 bg-amber-950/30 p-2.5 text-xs text-amber-200">
-      <b>Pansin:</b> Bawal ipasok sa Pilipinas (RA 10863) ang alahas na walang malinaw na tatak o mali ang fineness stamp.
-    </div>
+    <h3 class="h3"><i data-lucide="badge-check" data-fb="✓" class="h-5 w-5"></i>UAE hallmarks</h3>
+    <div class="flex items-center border-b border-dashed border-slate-700 py-2"><span class="stamp">999</span><span class="text-slate-200">24K, pinakamataas na purity. Bullion at manipis na alahas.</span></div>
+    <div class="flex items-center border-b border-dashed border-slate-700 py-2"><span class="stamp">916</span><span class="text-slate-200">22K, karaniwang plain gold sa Dubai souk.</span></div>
+    <div class="flex items-center border-b border-dashed border-slate-700 py-2"><span class="stamp">875</span><span class="text-slate-200">21K, popular sa Gulf at mas matibay sa araw-araw.</span></div>
+    <div class="flex items-center py-2"><span class="stamp">750</span><span class="text-slate-200">18K, madalas sa may bato o motif (Alhambra style).</span></div>
+    <p class="mt-2 rounded-lg bg-amber-400/10 p-2 text-sm text-amber-200">Bago bumili, siguraduhing may <b>malinaw na fineness mark</b> ang piraso. Bawal sa Pilipinas ang gold na walang tamang marka (tingnan ang Travel tab).</p>
   </div>
 
   <div class="card mt-3">
-    <h3 class="h3"><i data-lucide="camera" class="h-5 w-5"></i>Macro Hallmark Scanner</h3>
+    <h3 class="h3"><i data-lucide="camera" data-fb="◉" class="h-5 w-5"></i>Digital loupe</h3>
     <div id="camBox" class="relative aspect-[4/3] overflow-hidden rounded-xl bg-black ring-1 ring-slate-700">
-      <video id="cam" class="h-full w-full object-cover transition-transform" autoplay playsinline muted></video>
-      <div class="pointer-events-none absolute inset-0 flex items-center justify-center border border-amber-400/20">
-        <div class="h-24 w-40 rounded border border-dashed border-amber-400/60 bg-amber-400/5"></div>
-      </div>
+      <p class="pointer-events-none absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-slate-500">Live preview dito</p>
+      <video id="cam" class="relative h-full w-full object-cover" autoplay playsinline muted aria-label="Live na preview ng kamera"></video>
+      <div class="loupe-grid" hidden></div>
     </div>
-    <p id="camMsg" class="mt-1 text-xs text-slate-400">Itutok ang hallmark sa loob ng kahon.</p>
-    
-    <div class="mt-2.5 flex flex-wrap gap-2">
-      <button id="camStart" type="button" class="btn">Buksan Kamera</button>
-      <button id="snap" type="button" class="btn">Kuhanan (Macro Snap)</button>
-      <button id="torchBtn" type="button" class="btn-ghost hidden" aria-pressed="false">Flashlight</button>
-      <button id="camStop" type="button" class="btn-ghost">Patayin</button>
+    <p id="zoomMode" class="mt-1 text-xs text-slate-400" aria-live="polite"></p>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button id="camStart" type="button" class="btn" title="Buksan ang kamera">Buksan ang kamera</button>
+      <button id="snap" type="button" class="btn" title="Kumuha ng larawan para sa snapshot loupe">Kuhanan</button>
+      <button id="camStop" type="button" class="btn-ghost" title="Isara ang kamera">Isara</button>
+      <button id="torch" type="button" class="btn-ghost" aria-pressed="false" aria-label="Flashlight" title="I-on o i-off ang flashlight" disabled><i data-lucide="flashlight" data-fb="☀" class="h-4 w-4"></i><span>Flashlight</span></button>
     </div>
-    <div class="mt-2 flex items-center gap-1.5">
-      <span class="text-xs text-slate-400 mr-1">Zoom:</span>
-      <button id="z1" type="button" class="btn-ghost py-1 px-2.5 text-xs" aria-pressed="true">1x</button>
-      <button id="z2" type="button" class="btn-ghost py-1 px-2.5 text-xs" aria-pressed="false">2x</button>
-      <button id="z4" type="button" class="btn-ghost py-1 px-2.5 text-xs" aria-pressed="false">4x</button>
-      <label class="btn-ghost py-1 px-2.5 text-xs cursor-pointer ml-auto">
-        Pumili ng Larawan
-        <input id="camFile" type="file" accept="image/*" class="sr-only">
-      </label>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button id="z1" type="button" class="btn-ghost" aria-pressed="true" title="Zoom 1x" aria-label="Zoom 1x">1x</button>
+      <button id="z2" type="button" class="btn-ghost" aria-pressed="false" title="Zoom 2x" aria-label="Zoom 2x">2x</button>
+      <button id="z4" type="button" class="btn-ghost" aria-pressed="false" title="Zoom 4x" aria-label="Zoom 4x">4x</button>
+      <button id="hc" type="button" class="btn-ghost" aria-pressed="false" title="High contrast para sa maliit na stamp">High contrast</button>
+      <button id="gr" type="button" class="btn-ghost" aria-pressed="false" title="Ipakita ang grid">Grid</button>
+      <label id="camFileBtn" tabindex="0" role="button" class="btn-ghost cursor-pointer" title="Pumili o kumuha ng larawan sa halip na live na kamera">Gumamit ng larawan<input id="camFile" type="file" accept="image/*" capture="environment" class="sr-only" aria-label="Pumili ng larawan ng hallmark"></label>
     </div>
+    <p id="camMsg" class="mt-2 text-sm text-slate-400" role="status" aria-live="polite">Para mabasa ang maliit na stamp sa ilalim ng ilaw ng tindahan.</p>
   </div>
 
   <div id="snapWrap" class="card mt-3 hidden">
-    <h3 class="h3"><i data-lucide="zoom-in" class="h-5 w-5"></i>Snapshot Inspector</h3>
-    <div id="snapView" class="relative aspect-[4/3] touch-none cursor-grab overflow-hidden rounded-xl bg-black ring-1 ring-slate-700">
-      <canvas id="snapCanvas" class="h-full w-full"></canvas>
-    </div>
-    <p class="mt-1 text-xs text-slate-400">I-drag gamit ang daliri para hanapin ang numero ng hallmark.</p>
-    <div class="mt-2 flex flex-wrap items-center gap-1.5">
-      <button id="sz1" type="button" class="btn-ghost py-1 px-2 text-xs" aria-pressed="true">1x</button>
-      <button id="sz2" type="button" class="btn-ghost py-1 px-2 text-xs" aria-pressed="false">2x</button>
-      <button id="sz4" type="button" class="btn-ghost py-1 px-2 text-xs" aria-pressed="false">4x</button>
-      <button id="sz8" type="button" class="btn-ghost py-1 px-2 text-xs" aria-pressed="false">8x</button>
-      <button id="snapHc" type="button" class="btn-ghost py-1 px-2 text-xs" aria-pressed="false">High Contrast</button>
-      <button id="snapSave" type="button" class="btn-ghost py-1 px-2 text-xs">I-save</button>
-      <button id="snapClose" type="button" class="btn-ghost py-1 px-2 text-xs ml-auto">Isara</button>
+    <h3 class="h3"><i data-lucide="zoom-in" data-fb="+" class="h-5 w-5"></i>Snapshot loupe</h3>
+    <div id="snapView" class="relative aspect-[4/3] cursor-grab overflow-hidden rounded-xl bg-black ring-1 ring-slate-700"><canvas id="snapCanvas" role="img" aria-label="Na-capture na larawan ng hallmark. I-drag para umikot."></canvas></div>
+    <p class="mt-1 text-xs text-slate-400">I-drag para umikot. Gumagana ito kahit walang hardware zoom ang kamera.</p>
+    <div class="mt-2 flex flex-wrap gap-2">
+      <button id="sz1" type="button" class="btn-ghost" aria-pressed="true" aria-label="Snapshot zoom 1x" title="1x">1x</button>
+      <button id="sz2" type="button" class="btn-ghost" aria-pressed="false" aria-label="Snapshot zoom 2x" title="2x">2x</button>
+      <button id="sz4" type="button" class="btn-ghost" aria-pressed="false" aria-label="Snapshot zoom 4x" title="4x">4x</button>
+      <button id="sz8" type="button" class="btn-ghost" aria-pressed="false" aria-label="Snapshot zoom 8x" title="8x">8x</button>
+      <button id="snapHc" type="button" class="btn-ghost" aria-pressed="false" title="High contrast">High contrast</button>
+      <button id="snapSave" type="button" class="btn-ghost" title="I-save ang larawan" aria-label="I-save ang larawan">I-save</button>
+      <button id="snapClose" type="button" class="btn-ghost" title="Isara ang snapshot" aria-label="Isara ang snapshot">Isara</button>
     </div>
   </div>
 
   <div class="card mt-3">
-    <h3 class="h3"><i data-lucide="check-square" class="h-5 w-5"></i>5-Point Deira Souk Checklist</h3>
+    <h3 class="h3"><i data-lucide="list-checks" data-fb="☑" class="h-5 w-5"></i>5-point souk checklist</h3>
     <div id="checks"></div>
-    <div class="mt-3 h-2 overflow-hidden rounded-full bg-slate-900"><i id="meter" class="block h-full w-0 bg-amber-400 transition-all duration-300"></i></div>
-    <p id="score" class="mt-1.5 text-xs font-semibold text-slate-300"></p>
+    <div class="mt-2 h-2 overflow-hidden rounded bg-slate-900" role="presentation"><i id="meter" class="block h-full w-0 bg-amber-400 transition-all"></i></div>
+    <p id="score" class="mt-1 text-sm text-slate-400" role="status"></p>
   </div>
 </section>
 
-<!-- BULLION VS JEWELRY TAB -->
-<section id="roi" data-sec class="hidden">
+<!-- ROI -->
+<section id="roi" data-sec role="tabpanel" aria-labelledby="t-roi">
   <h2 class="h2">Bullion vs. Alahas</h2>
-  
   <div class="card mt-3">
-    <h3 class="h3"><i data-lucide="coins" class="h-5 w-5"></i>Instant Gold Bar Spot Check</h3>
-    <p class="text-xs text-slate-300 mb-2">Pindutin para mabilisang kalkulahin ang 24K bar sa board rate ngayon:</p>
-    <div class="grid grid-cols-4 gap-1.5 text-xs">
-      <button data-bar="1" class="rounded bg-slate-900 py-1.5 font-bold text-amber-300 hover:bg-slate-700 border border-slate-700">1 Gram</button>
-      <button data-bar="2.5" class="rounded bg-slate-900 py-1.5 font-bold text-amber-300 hover:bg-slate-700 border border-slate-700">2.5g</button>
-      <button data-bar="5" class="rounded bg-slate-900 py-1.5 font-bold text-amber-300 hover:bg-slate-700 border border-slate-700">5 Grams</button>
-      <button data-bar="10" class="rounded bg-slate-900 py-1.5 font-bold text-amber-300 hover:bg-slate-700 border border-slate-700">10 Grams</button>
-      <button data-bar="11.66" class="rounded bg-slate-900 py-1.5 font-bold text-amber-300 hover:bg-slate-700 border border-slate-700">1 Tola</button>
-      <button data-bar="20" class="rounded bg-slate-900 py-1.5 font-bold text-amber-300 hover:bg-slate-700 border border-slate-700">20 Grams</button>
-      <button data-bar="50" class="rounded bg-slate-900 py-1.5 font-bold text-amber-300 hover:bg-slate-700 border border-slate-700">50 Grams</button>
-      <button data-bar="100" class="rounded bg-slate-900 py-1.5 font-bold text-amber-300 hover:bg-slate-700 border border-slate-700">100g Bar</button>
-    </div>
+    <h3 class="h3"><i data-lucide="coins" data-fb="●" class="h-5 w-5"></i>Presyo ng 24K bar</h3>
+    <div id="barBtns" class="flex flex-wrap gap-2" role="group" aria-label="Karaniwang timbang ng gold bar"></div>
+    <div class="mt-3"><label class="lbl" for="barCustom">O ilagay ang sariling timbang (g)</label><input id="barCustom" class="inp" type="text" inputmode="decimal" autocomplete="off" placeholder="hal. 31.1"></div>
+    <div id="barOut" class="mt-3" aria-live="polite"></div>
   </div>
-
   <div class="card mt-3 overflow-x-auto">
-    <table class="w-full min-w-[32rem] border-collapse text-xs">
-      <thead>
-        <tr class="border-b border-slate-700 text-left text-amber-400">
-          <th class="p-2">Kategorya</th>
-          <th class="p-2">24K Bullion (PAMP/Valcambi)</th>
-          <th class="p-2">Plain Solid (21K/22K)</th>
-          <th class="p-2">Motif c/o Bato (18K VCA)</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-slate-700/60 text-slate-200">
-        <tr><td class="p-2 font-bold text-amber-300">Making Charge</td><td class="p-2">Napakababa (1-3%)</td><td class="p-2">Katamtaman (5-10%)</td><td class="p-2">Napakataas (20-35%+)</td></tr>
-        <tr><td class="p-2 font-bold text-amber-300">Pawn Value</td><td class="p-2">95–98% ng spot value</td><td class="p-2">85–92% ng spot value</td><td class="p-2">50–65% lang ng binayad</td></tr>
-        <tr><td class="p-2 font-bold text-amber-300">Gamit / Suot</td><td class="p-2">Pang-vault o emergency</td><td class="p-2">Araw-araw na palamuti</td><td class="p-2">Fashion / Estetika</td></tr>
-        <tr><td class="p-2 font-bold text-amber-300">Bawas sa Timbangan</td><td class="p-2">Walang bawas (100% gold)</td><td class="p-2">Walang bawas</td><td class="p-2">Bawas ang bato (10-15%)</td></tr>
+    <table class="w-full min-w-[34rem] border-collapse text-sm">
+      <caption class="sr-only">Paghahambing ng 24K bar, plain gold at motif jewelry</caption>
+      <thead><tr class="text-left text-amber-400"><th scope="col" class="p-2"></th><th scope="col" class="p-2">24K bar (PAMP/Valcambi)</th><th scope="col" class="p-2">Plain 21K/22K</th><th scope="col" class="p-2">Motif / bato</th></tr></thead>
+      <tbody class="text-slate-200">
+        <tr class="border-t border-slate-700"><th scope="row" class="p-2 text-left text-amber-300">Liquidity</th><td class="p-2">Pinakamataas. Tinatanggap kahit saan.</td><td class="p-2">Mataas. Scrap value lang.</td><td class="p-2">Mababa. Hindi binabayaran ang bato.</td></tr>
+        <tr class="border-t border-slate-700"><th scope="row" class="p-2 text-left text-amber-300">Upah</th><td class="p-2">Mababa (premium lang).</td><td class="p-2">Katamtaman, nego-able.</td><td class="p-2">Mataas, bayad pati sa bato.</td></tr>
+        <tr class="border-t border-slate-700"><th scope="row" class="p-2 text-left text-amber-300">VAT sa UAE</th><td class="p-2">Karaniwang 0% (99%+ investment grade).</td><td class="p-2">5% sa buong piraso.</td><td class="p-2">5% sa buong piraso.</td></tr>
+        <tr class="border-t border-slate-700"><th scope="row" class="p-2 text-left text-amber-300">Suot</th><td class="p-2">Hindi suotin.</td><td class="p-2">Oo, araw-araw.</td><td class="p-2">Oo, fashion piece.</td></tr>
+        <tr class="border-t border-slate-700"><th scope="row" class="p-2 text-left text-amber-300">Resale</th><td class="p-2">Malapit sa spot price.</td><td class="p-2">Spot minus upah at purity cut.</td><td class="p-2">Malaking lugi (tingnan ang Calculator).</td></tr>
       </tbody>
     </table>
   </div>
+  <div class="card mt-3 text-slate-200"><b class="text-amber-400">Payo:</b> Kung pang-emergency o ipon, mas matalino ang bar o plain solid gold. Kung pang-suot lang ang motif piece, tanggapin na hindi ito pang-sangla.</div>
 </section>
 
-<!-- TRAVEL & CUSTOMS TAB -->
-<section id="travel" data-sec class="hidden">
-  <h2 class="h2">Customs & Planet VAT</h2>
+<!-- TRAVEL -->
+<section id="travel" data-sec role="tabpanel" aria-labelledby="t-travel">
+  <h2 class="h2">OFW Travel at Customs</h2>
+  <p class="text-slate-300">Para sa pagdadala ng gold pauwi sa NAIA at pag-claim ng VAT refund sa DXB.</p>
 
   <div class="card mt-3 space-y-2">
-    <h3 class="h3"><i data-lucide="plane-takeoff" class="h-5 w-5"></i>BOC & NAIA Rules</h3>
-    
-    <details class="rule" open>
-      <summary>1. RA 10863 (CMTA) Sec. 118(d) - Bawal ang Falsely Marked Gold</summary>
-      <p class="mt-2 text-xs text-slate-300 leading-relaxed">
-        Ipinagbabawal ng batas ang pag-angkat ng ginto o pilak na walang selyo o hindi tumutugma ang tatak sa tunay nitong fineness. Kumpiskado ang unmarked gold at may kaakibat na legal penalty.
-      </p>
-    </details>
+    <h3 class="h3"><i data-lucide="landmark" data-fb="⚖" class="h-5 w-5"></i>BOC / NAIA rules</h3>
 
     <details class="rule" open>
-      <summary>2. eTravel QR & Cash Declaration Limits</summary>
-      <ul class="mt-2 list-disc space-y-1 pl-4 text-xs text-slate-300">
-        <li>Punan ang e-Customs sa loob ng <b>72 oras</b> bago lumapag sa <b>etravel.gov.ph</b>.</li>
-        <li><b>Cash Limit:</b> Bawal magdala ng higit sa <b>PHP 50,000</b> (local) o <b>USD 10,000 / ~36,700 AED</b> (foreign currency) nang walang nakasulat na pahintulot mula sa Bangko Sentral ng Pilipinas.</li>
-        <li>Ang hindi pagdeklara ng dutiable goods ay may <b>30% surcharge</b> dagdag sa buwis.</li>
+      <summary>1. Bawal: gold na walang tamang marka</summary>
+      <p class="mt-2"><b class="text-amber-300">RA 10863 (CMTA), Sec. 118(d):</b> bawal i-import o i-export ang anumang gamit na gawa sa buo o bahagi ng gold, silver o iba pang mahalagang metal kung ang stamp, brand o mark ay hindi nagsasabi ng tunay na fineness o kalidad ng metal.</p>
+      <ul class="mt-2 list-disc space-y-1 pl-5">
+        <li>Ang unmarked o maling marka (hal. "916" pero hindi naman) ay maaaring kumpiskahin at humantong sa kaso.</li>
+        <li>Bago bumili sa Dubai, basahin ang hallmark gamit ang loupe at itugma sa resibo.</li>
+        <li>Walang marka? Huwag bilhin, o huwag dalhin pauwi.</li>
       </ul>
     </details>
 
     <details class="rule" open>
-      <summary>3. Personal Allowance Calculator</summary>
-      <div class="mt-2 grid grid-cols-2 gap-3">
-        <div><label class="lbl" for="cval">Kabuuang Halaga (AED)</label><input id="cval" class="inp" type="number" step="10"></div>
-        <div><label class="lbl" for="cmode">Gamit</label><select id="cmode" class="inp"><option value="personal">Personal / Suot</option><option value="commercial">Commercial / Bars</option></select></div>
+      <summary>2. eTravel declaration</summary>
+      <ul class="mt-2 list-disc space-y-1 pl-5">
+        <li>Napalitan ng <b class="text-amber-300">eTravel QR</b> ang papel na customs form. Punan ang e-Arrival na may e-Customs Baggage Declaration (e-CBDF) at e-Currencies Declaration (e-CDF) sa <b>etravel.gov.ph</b> o sa eGovPH app, <b>sa loob ng 72 oras</b> bago dumating.</li>
+        <li>Nasa listahan ng dedeklara ang <b>"Jewelry, gold, precious metals, or gems"</b>. Ideklara ang dala mo.</li>
+        <li>Libre ang eTravel registration. Sa opisyal na site/app lang mag-register.</li>
+        <li>Hindi nagdedeklara ng dutiable goods: duties at taxes <b>plus 30% surcharge</b> (Sec. 1404).</li>
+      </ul>
+    </details>
+
+    <details class="rule" open>
+      <summary>3. Suot na alahas vs. commercial / bullion</summary>
+      <ul class="mt-2 list-disc space-y-1 pl-5">
+        <li><b class="text-amber-300">Personal:</b> suot o personal na alahas sa makatwirang dami.</li>
+        <li><b class="text-amber-300">Siyasat:</b> lahat ng tao at bagahe ay puwedeng halughugin (Sec. 222-223). Kahit <b>suot sa katawan pagdating</b>, maaaring siyasatin ang alahas kung ang dami ay nagpapahiwatig na pang-benta o pang-trade.</li>
+        <li><b class="text-amber-300">Commercial:</b> bullion bars, maraming magkakaparehong piraso o halatang pang-benta. Hindi ito sakop ng personal exemption at maaaring buwisan.</li>
+        <li>Halagang PHP 10,000 pababa: walang duties at taxes (Sec. 423).</li>
+        <li>Mga Pilipino: exemption para sa personal effects at household goods hanggang PHP 150,000, hanggang 3 beses kada taon, basta hindi commercial.</li>
+      </ul>
+      <div class="mt-3 rounded-lg bg-slate-800 p-3">
+        <p class="mb-2 text-sm font-semibold text-slate-100">Mabilis na tantya</p>
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="lbl" for="cval">Halaga ng dala (AED)</label><input id="cval" class="inp" type="text" inputmode="decimal" autocomplete="off"></div>
+          <div><label class="lbl" for="cmode">Uri</label><select id="cmode" class="inp"><option value="personal">Personal / suot</option><option value="commercial">Bar / maramihan</option></select></div>
+        </div>
+        <div id="cout" class="hidden" aria-live="polite"></div>
+        <p class="mt-2 text-xs text-slate-400">Gabay lang ito, hindi legal na payo. Nagbabago ang patakaran; kumpirmahin sa customs.gov.ph o etravel.gov.ph bago bumiyahe.</p>
       </div>
-      <div id="cout" class="mt-3 rounded-xl border-l-4 p-3 text-xs" aria-live="polite"></div>
+    </details>
+
+    <details class="rule" open>
+      <summary>4. Pisikal na pera (BSP at BOC)</summary>
+      <ul class="mt-2 list-disc space-y-1 pl-5">
+        <li><b class="text-amber-300">Philippine pesos:</b> ideklara ang higit sa <b>PHP 50,000</b>. Ang paglabas o pagpasok ng higit dito ay nangangailangan ng paunang nakasulat na pahintulot ng BSP, at limitado ang pinapayagang dahilan.</li>
+        <li><b class="text-amber-300">Foreign currency:</b> ideklara ang higit sa <b>USD 10,000</b> o katumbas nito, mga <b>AED 36,725</b> (peg na 3.6725).</li>
+        <li>Gamitin ang e-Currencies Declaration (e-CDF) sa eTravel. Ang hindi pagdedeklara o maling deklarasyon ay maaaring humantong sa pagkumpiska at kaso.</li>
+      </ul>
+      <div class="mt-3 grid grid-cols-2 gap-3 rounded-lg bg-slate-800 p-3">
+        <div><label class="lbl" for="ccash">Cash na dala</label><input id="ccash" class="inp" type="text" inputmode="decimal" autocomplete="off"></div>
+        <div><label class="lbl" for="ccur">Currency</label><select id="ccur" class="inp"><option value="PHP">PHP</option><option value="USD">USD</option><option value="AED">AED</option></select></div>
+        <div id="cashOut" class="col-span-2 hidden" aria-live="polite"></div>
+      </div>
     </details>
   </div>
 
   <div class="card mt-3">
-    <h3 class="h3"><i data-lucide="receipt" class="h-5 w-5"></i>DXB Planet Tax Free Steps (T1, T2, T3)</h3>
-    <ol class="list-decimal space-y-1.5 pl-4 text-xs text-slate-300">
-      <li>Humingi ng <b>Planet Tax Free Tag</b> sa tindahan bago magbayad (minimum 250 AED resibo).</li>
-      <li>Dalhin ang gold sa iyong <b>hand-carry baggage</b> (huwag i-check-in).</li>
-      <li>Pumunta sa Planet Validation Kiosk sa Departures hall <b>bago dumaan sa passport control</b>.</li>
-      <li>I-scan ang pasaporte sa kiosk. Kapag <b>Green</b>, tapos na. Kapag <b>Red</b>, ipakita ang itemized receipt at alahas sa customs inspector.</li>
-      <li>Tanggapin ang refund sa card o cash sa loob ng terminal.</li>
+    <h3 class="h3"><i data-lucide="file-check" data-fb="☑" class="h-5 w-5"></i>Mga dokumentong dalhin</h3>
+    <p class="mb-1 text-sm text-slate-400">Inirerekomenda para sa mabilis na customs clearance. Hindi lahat ay hinihingi ng batas, pero nakakatulong ito kung tatanungin ang halaga at pinagmulan.</p>
+    <div id="docs"></div>
+    <div class="mt-2 h-2 overflow-hidden rounded bg-slate-900" role="presentation"><i id="docsMeter" class="block h-full w-0 bg-amber-400 transition-all"></i></div>
+    <p id="docsScore" class="mt-1 text-sm text-slate-400" role="status"></p>
+  </div>
+
+  <div class="card mt-3 space-y-2">
+    <h3 class="h3"><i data-lucide="receipt" data-fb="₱" class="h-5 w-5"></i>Planet Tax Free sa DXB (T1, T2, T3)</h3>
+    <p class="text-sm text-slate-300">Para sa mga turista o hindi residente. Kumpirmahin ang eligibility sa Planet.</p>
+    <ol class="space-y-2">
+      <li class="rule"><b class="text-slate-50">Sa tindahan:</b> bumili sa Planet-registered na retailer, AED 250 pataas (kasama ang VAT) kada transaksyon. Ipakita ang pasaporte para magawa ang <b>Tax Free tag</b> o digital form, at hingin ang itemized invoice.</li>
+      <li class="rule"><b class="text-slate-50">Bago pumunta sa check-in:</b> huwag munang isama sa checked baggage ang gold. Dalhin ito sa kamay, dahil puwedeng ipakita sa staff.</li>
+      <li class="rule"><b class="text-slate-50">Hanapin ang Planet validation point</b> sa Departures hall, <b>bago ang check-in counters at passport control</b>. May kiosk sa Terminal 1, Terminal 2 at Terminal 3, at hiwalay na point para sa Terminal 3 Business.</li>
+      <li class="rule"><b class="text-slate-50">I-scan ang pasaporte</b> sa self-service kiosk (o ilagay ang number nang manu-mano). Lalabas ang mga transaksyon mo.</li>
+      <li class="rule"><b class="text-slate-50">Berde = tapos na.</b> Pula o may inspeksyon: lumapit sa staff at ipakita ang gold, invoice at pasaporte.</li>
+      <li class="rule"><b class="text-slate-50">Saka mag-check-in</b> at dumaan sa immigration. Kunin ang refund sa card, o cash sa participating forex counter pagkatapos ng passport control.</li>
     </ol>
+    <p class="text-xs text-slate-400">Refund = 85% ng VAT na binayaran, bawas AED 4.80 kada tag. Valid ang tag sa loob ng 90 araw. Tingnan ang kasalukuyang detalye sa planetpayment.ae.</p>
   </div>
 
   <div class="card mt-3">
-    <h3 class="h3"><i data-lucide="archive" class="h-5 w-5"></i>GitHub Deployment ZIP</h3>
-    <p class="text-xs text-slate-300 mb-3">I-download ang kumpletong bundle na may valid PNG icons para sa deployment sa GitHub Pages.</p>
-    <button id="zipBtn" type="button" class="btn w-full">I-download ang Project ZIP</button>
+    <h3 class="h3"><i data-lucide="download" data-fb="↓" class="h-5 w-5"></i>I-save ang app</h3>
+    <p class="mb-3 text-sm text-slate-300">I-download ang buong project para i-upload sa GitHub Pages.</p>
+    <button id="zipBtn" type="button" class="btn w-full" aria-label="I-download ang buong project bilang ZIP file">I-download ang Project ZIP</button>
   </div>
 </section>
 </main>
+<footer class="mx-auto max-w-2xl px-3 pb-4 text-xs text-slate-500">
+  Mga live na rate: gold mula sa <a class="underline hover:text-amber-300" href="https://gold-api.com" target="_blank" rel="noopener noreferrer">Gold-API.com</a>; forex mula sa <a class="underline hover:text-amber-300" href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer">Rates By Exchange Rate API</a>.
+</footer>
 
-<nav class="fixed inset-x-0 bottom-0 z-40 flex border-t border-slate-700 bg-slate-900/95 backdrop-blur" style="padding-bottom:env(safe-area-inset-bottom)">
-  <button class="tab text-amber-400 border-amber-400" data-t="calc" aria-selected="true" type="button">
-    <i data-lucide="calculator" class="h-5 w-5"></i>
-    <span>Calculator</span>
-  </button>
-  <button class="tab text-slate-400 border-transparent" data-t="scan" aria-selected="false" type="button">
-    <i data-lucide="scan" class="h-5 w-5"></i>
-    <span>Loupe Check</span>
-  </button>
-  <button class="tab text-slate-400 border-transparent" data-t="roi" aria-selected="false" type="button">
-    <i data-lucide="scale" class="h-5 w-5"></i>
-    <span>Bullion</span>
-  </button>
-  <button class="tab text-slate-400 border-transparent" data-t="travel" aria-selected="false" type="button">
-    <i data-lucide="plane" class="h-5 w-5"></i>
-    <span>Travel</span>
-  </button>
+<nav class="fixed inset-x-0 bottom-0 z-40 flex border-t border-slate-700 bg-slate-900/95 backdrop-blur" role="tablist" aria-label="Mga seksyon" style="padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)">
+  <button id="t-calc" class="tab" data-t="calc" role="tab" aria-controls="calc" aria-selected="true" type="button" title="Sangla vs. Suot calculator"><i data-lucide="calculator" data-fb="＝" class="h-5 w-5"></i><span>Calculator</span></button>
+  <button id="t-scan" class="tab" data-t="scan" role="tab" aria-controls="scan" aria-selected="false" tabindex="-1" type="button" title="Legit check at digital loupe"><i data-lucide="scan-search" data-fb="◎" class="h-5 w-5"></i><span>Legit check</span></button>
+  <button id="t-roi" class="tab" data-t="roi" role="tab" aria-controls="roi" aria-selected="false" tabindex="-1" type="button" title="Bullion vs. alahas"><i data-lucide="scale" data-fb="⚖" class="h-5 w-5"></i><span>Bullion</span></button>
+  <button id="t-travel" class="tab" data-t="travel" role="tab" aria-controls="travel" aria-selected="false" tabindex="-1" type="button" title="OFW travel at customs"><i data-lucide="plane" data-fb="✈" class="h-5 w-5"></i><span>Travel</span></button>
 </nav>
-
 <script type="module" src="js/app.js"></script>
 </body>
 </html>
